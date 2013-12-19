@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Game of Wits
+  	</title>
+  </head>
+ <body>
+
+
+
+	<br><br>
+	<div class="answers">
+
+  	<form action="/results" method="POST">
+
+	<h1><%= @random.random_one %></h1>
+
+	<label for="Post-item"><h2>Who said this?</h2></label>
+	<table align="middle">
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="jaime">Jaime Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="cersei">Cersei Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="tyrion">Tyrion Lannister
+		</td>
+		</tr>
+	</table>
+
+
+	<h1><%= @random.random_two %></h1>
+
+	<label for="Post-item"><h2>Who said this?</h2></label>
+	<table align="middle">
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[1]" value="eddard">Eddard "Ned" Stark <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[1]" value="catelyn">Catelyn Tully Stark<br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[1]" value="petyr">Petyr Baelish
+		</td>
+		</tr>
+	</table>
+
+	<h1><%= @random.random_three %></h1>
+
+	<label for="Post-item"><h2>Who said this?</h2></label>
+	<table align="middle">
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[2]" value="daenerys">Daenerys Targaryen <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[2]" value="jon">Jon Snow<br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[2]" value="stannis">Stannis Baratheon
+		</td>
+		</tr>
+	</table>
+
+
+	<h2><%= @random.correct %><h2>
+	<h2><%= @random.answer_sheet %><h2>
+	<input type="hidden" name="correct" value=<%= @random.answer_sheet %>>
+
+
+	<button type="submit" value="results">results</button>
+	</form>  
+
+
+
+
+	</div>
+
+
+	<br><br><br>
+
+ </body>
+</html>  

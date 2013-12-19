@@ -1,0 +1,93 @@
+	<%= @random.message_random %>
+
+	<label for="Post-item"><h2>Who said this?</h2></label>
+	<table align="middle">
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="jamie">Jamie Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="cersei">Cersei Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="tyrion">Tyrion Lannister
+		</td>
+		</tr>
+	</table>
+
+
+	<%= @random.message_random %>
+
+	<label for="Post-item"><h2>Who said this?</h2></label>
+	<table align="middle">
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="eddard">Eddard "Ned" Stark <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="catelyn">Catelyn Tully Stark<br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="Petyr">Petyr Baelish
+		</td>
+		</tr>
+	</table>
+
+	<%= @random.message_random %>
+
+	<label for="Post-item"><h2>Who said this?</h2></label>
+	<table align="middle">
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="daenerys">Daenerys Targaryen <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="jon">Jon Snow<br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="stannis">Stannis Baratheon
+		</td>
+		</tr>
+	</table>
+
+
+
+-----------
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="jamie">Jamie Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="eddard">Eddard "Ned" Stark <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="daenerys">Daenerys Targaryen <br>
+		</td>
+		</tr>
+
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="cersei">Cersei Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="catelyn">Catelyn Tully Stark<br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="jon">Jon Snow<br>
+		</td>
+		</tr>
+
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="tyrion">Tyrion Lannister
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="Petyr">Petyr Baelish
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="stannis">Stannis Baratheon
+		</td>
+		</tr>
+
+
+

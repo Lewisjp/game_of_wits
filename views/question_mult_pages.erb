@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Game of Wits
+  	</title>
+  </head>
+ <body>
+
+
+	<div class="question">
+
+	<%= @random.message_random %>
+
+
+	</div>
+	<br><br>
+	<div class="answers">
+
+  	<form action="/avm" method="POST">
+
+	  <label for="Post-item"><h2>Who said this?</h2></label>
+
+		<table align="middle">
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="jamie">Jamie Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="eddard">Eddard "Ned" Stark <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="daenerys">Daenerys Targaryen <br>
+		</td>
+		</tr>
+
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="cersei">Cersei Lannister <br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="catelyn">Catelyn Tully Stark<br>
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="jon">Jon Snow<br>
+		</td>
+		</tr>
+
+		<tr>
+		<td>			
+			<input type="radio" id="answer" name="answer[0]" value="tyrion">Tyrion Lannister
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="Petyr">Petyr Baelish
+		</td>
+		<td>
+			<input type="radio" id="answer" name="answer[0]" value="stannis">Stannis Baratheon
+		</td>
+		</tr>
+
+
+
+	</table>
+
+	<button type="submit" value="avm">Next quote</button>
+	</form>  
+
+
+
+
+	</div>
+
+
+	<br><br><br>
+
+ </body>
+</html>  
