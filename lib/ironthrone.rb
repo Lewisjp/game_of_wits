@@ -154,22 +154,45 @@ class Ironthrone
 	end
 
 	def results(params)
-#		params["answer"] #=>{"0"=>"tyrion", "1"=>"eddard", "2"=>"daenerys"}
-#		params["correct"]["0"]  #=> {:one=>"tyrion", :two=>"eddard", :three=>"daenerys"}
 
-#		params["answer"]["0"] #=> tyrion
+#		params["correct"] #=> {"0"=>"jaime", "1"=>"catelyn", "2"=>"stannis"}
+#		params["answer"] #=> {"0"=>"jaime", "1"=>"catelyn", "2"=>"stannis"}
 
-#		params["correct"]["0"].class #=> String
-		params["correct"]["0"] #=> {:one=>"tyrion", :two=>"eddard", :three=>"daenerys"}	
+#		params["correct"]["0"] #=> jaime
+#		params["answer"]["0"] #=> jaime
+
+		counter = 0
+		if params["correct"]["0"] == params["answer"]["0"] 
+			counter += 1
+		end
+		if params["correct"]["1"] == params["answer"]["1"] 
+			counter += 1
+		end
+		if params["correct"]["2"] == params["answer"]["2"] 
+			counter += 1
+		end
+
+		@choice = counter
+
+		case counter
+		when 0 then "I'm not questioning your wit. I'm denying its existence."
+		when 1 then "You knew one.  That is your one redeeming quality."
+		when 2 then "You have given two names... correctly."
+		when 3 then "You knew every name as if they were a prayer."
+		end
+		
 	end
 
 
-end
+	def image_answer
+		throne = [
+			"'../img/sansa.png'",
+			"'../img/hound.jpg'",
+			"'../img/tywin.jpg'",
+			"'../img/arya.jpg'"
+		]
+		throne[choice]
+	end
 
-# test = Ironthrone.new
-# puts test.choice
-# puts test.image_random
-# puts test.message_random
-# puts "\n\n"
-# puts test.random_one
+end
 
