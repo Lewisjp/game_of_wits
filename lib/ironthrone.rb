@@ -1,5 +1,3 @@
-require 'debugger'
-
 class Ironthrone
 	attr_accessor :choice, :message, :image, :random_quote, :correct
 
